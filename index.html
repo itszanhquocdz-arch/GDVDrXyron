@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GDVDrXyron - Kiểm tra lừa đảo trực tuyến, tra cứu số điện thoại, website lừa đảo. Bảo vệ bạn khỏi mọi hình thức lừa đảo">
+    <meta name="keywords" content="check scam, kiểm tra lừa đảo, số điện thoại lừa đảo, website lừa đảo, tài khoản lừa đảo">
+    <title>GDVDrXyron - Kiểm tra lừa đảo trực tuyến | Bảo vệ bạn khỏi lừa đảo</title>
+
+```
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+```
+
+</head>
+<body>
+
+```
+<!-- Alert Banner -->
+<div class="alert-banner">
+    <div class="container">
+        <div class="alert-content">
+            <span class="alert-icon">⚠️</span>
+            <p><strong>Cảnh báo:</strong> Phát hiện 847 trường hợp lừa đảo mới trong 24h qua!</p>
+            <button class="alert-close">&times;</button>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="container">
+        <div class="nav-wrapper">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 40 40" fill="none">
+                        <circle cx="20" cy="20" r="18" fill="#DC2626"/>
+                        <path d="M20 8L12 14V20C12 24.42 15.03 28.34 20 29.5C24.97 28.34 28 24.42 28 20V14L20 8Z" fill="white"/>
+                        <path d="M17 20L19 22L23 18" stroke="#DC2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <span class="logo-text">GDVDrXyron</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Trang chủ</a>
+                <a href="#check" class="nav-link">Kiểm tra</a>
+                <a href="#database" class="nav-link">Cơ sở dữ liệu</a>
+                <a href="#report" class="nav-link">Báo cáo</a>
+                <a href="#news" class="nav-link">Tin tức</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="btn-report">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"/>
+                    </svg>
+                    Báo cáo lừa đảo
+                </button>
+                <button class="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+    <a href="#home" class="mobile-link">Trang chủ</a>
+    <a href="#check" class="mobile-link">Kiểm tra</a>
+    <a href="#database" class="mobile-link">Cơ sở dữ liệu</a>
+    <a href="#report" class="mobile-link">Báo cáo</a>
+    <a href="#news" class="mobile-link">Tin tức</a>
+</div>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title" data-aos="fade-up">
+                Kiểm tra lừa đảo<br>
+                <span class="highlight">miễn phí</span> và <span class="highlight">nhanh chóng</span>
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Bảo vệ bản thân và người thân khỏi các hình thức lừa đảo trực tuyến.<br>
+                Tra cứu số điện thoại, website, tài khoản ngân hàng ngay!
+            </p>
+            
+            <!-- Main Search Box -->
+            <div class="search-box" data-aos="fade-up" data-aos-delay="200">
+                <div class="search-input-wrapper">
+                    <svg class="search-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"/>
+                    </svg>
+                    <input 
+                        type="text" 
+                        id="main-search" 
+                        placeholder="Nhập số điện thoại, website, STK ngân hàng..." 
+                        class="search-input"
+                    >
+                </div>
+                <select class="search-type" id="search-type">
+                    <option value="auto">Tự động</option>
+                    <option value="phone">Số điện thoại</option>
+                    <option value="website">Website</option>
+                    <option value="bank">Ngân hàng</option>
+                    <option value="social">Mạng xã hội</option>
+                </select>
+                <button class="btn-search" id="btn-check">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                        <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm9.707 5.707a1 1 0 00-1.414-1.414L9 12.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                    </svg>
+                    Kiểm tra ngay
+                </button>
+            </div>
+            
+            <!-- Quick Stats -->
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
+                <div class="stat-item">
+                    <div class="stat-number">1,247,893</div>
+                    <div class="stat-label">Lượt kiểm tra</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number">89,452</div>
+                    <div class="stat-label">Case lừa đảo</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number">47 tỷ VNĐ</div>
+                    <div class="stat-label">Tiền đã cứu</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Background Elements -->
+    <div class="hero-bg">
+        <div class="bg-circle circle-1"></div>
+        <div class="bg-circle circle-2"></div>
+        <div class="bg-circle circle-3"></div>
+    </div>
+</section>
+
+<!-- Check Types Section -->
+<section class="check-types">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Kiểm tra lừa đảo theo loại</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+            Chọn loại thông tin bạn muốn kiểm tra
+        </p>
+        
+        <div class="types-grid">
+            <div class="type-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="type-icon phone">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 class="type-title">Số điện thoại</h3>
+                <p class="type-desc">Kiểm tra số điện thoại có trong danh sách lừa đảo hay không</p>
+                <div class="type-stats">
+                    <span class="type-count">64,234 SĐT</span>
+                    <span class="type-badge danger">Nguy hiểm cao</span>
+                </div>
+            </div>
+            
+            <div class="type-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="type-icon website">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 class="type-title">Website</h3>
+                <p class="type-desc">Xác minh tính an toàn của website trước khi truy cập</p>
+                <div class="type-stats">
+                    <span class="type-count">18,756 Website</span>
+                    <span class="type-badge danger">Nguy hiểm cao</span>
+                </div>
+            </div>
+            
+            <div class="type-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="type-icon bank">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 class="type-title">Tài khoản ngân hàng</h3>
+                <p class="type-desc">Kiểm tra STK ngân hàng có liên quan đến lừa đảo</p>
+                <div class="type-stats">
+                    <span class="type-count">12,891 STK</span>
+                    <span class="type-badge warning">Cảnh báo</span>
+                </div>
+            </div>
+            
+            <div class="type-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="type-icon social">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 class="type-title">Mạng xã hội</h3>
+                <p class="type-desc">Kiểm tra tài khoản Facebook, Zalo lừa đảo</p>
+                <div class="type-stats">
+                    <span class="type-count">9,452 Tài khoản</span>
+                    <span class="type-badge warning">Cảnh báo</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section class="how-it-works">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Cách thức hoạt động</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+            Quy trình kiểm tra đơn giản chỉ trong 3 bước
+        </p>
+        
+        <div class="steps-container">
+            <div class="step" data-aos="fade-right" data-aos-delay="0">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                    <h3 class="step-title">Nhập thông tin</h3>
+                    <p class="step-desc">Nhập số điện thoại, website hoặc STK ngân hàng cần kiểm tra vào ô tìm kiếm</p>
+                </div>
+                <div class="step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="step" data-aos="fade-right" data-aos-delay="100">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                    <h3 class="step-title">Hệ thống kiểm tra</h3>
+                    <p class="step-desc">AI và cơ sở dữ liệu sẽ quét và phân tích thông tin trong vài giây</p>
+                </div>
+                <div class="step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="step" data-aos="fade-right" data-aos-delay="200">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                    <h3 class="step-title">Nhận kết quả</h3>
+                    <p class="step-desc">Xem kết quả chi tiết với mức độ nguy hiểm và hướng dẫn phòng tránh</p>
+                </div>
+                <div class="step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Recent Scams -->
+<section class="recent-scams">
+    <div class="container">
+        <div class="section-header">
+            <div>
+                <h2 class="section-title" data-aos="fade-up">Lừa đảo mới phát hiện</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    Cập nhật liên tục các case lừa đảo mới nhất
+                </p>
+            </div>
+            <a href="#database" class="btn-view-all">
+                Xem tất cả
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/>
+                </svg>
+            </a>
+        </div>
+        
+        <div class="scams-grid">
+            <div class="scam-card danger" data-aos="fade-up" data-aos-delay="0">
+                <div class="scam-header">
+                    <div class="scam-badge danger">
+                        <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"/>
+                        </svg>
+                        Nguy hiểm cao
+                    </div>
+                    <span class="scam-time">2 giờ trước</span>
+                </div>
+                <h3 class="scam-title">0987.654.321</h3>
+                <p class="scam-type">Số điện thoại</p>
+                <p class="scam-desc">Giả danh công an, yêu cầu chuyển tiền để "xác minh tài khoản". Đã có 47 người báo cáo bị lừa.</p>
+                <div class="scam-footer">
+                    <span class="scam-reports">47 báo cáo</span>
+                    <button class="btn-detail">Chi tiết</button>
+                </div>
+            </div>
+            
+            <div class="scam-card danger" data-aos="fade-up" data-aos-delay="100">
+                <div class="scam-header">
+                    <div class="scam-badge danger">
+                        <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"/>
+                        </svg>
+                        Nguy hiểm cao
+                    </div>
+                    <span class="scam-time">5 giờ trước</span>
+                </div>
+                <h3 class="scam-title">shopee-vn.online</h3>
+                <p class="scam-type">Website giả mạo</p>
+                <p class="scam-desc">Website giả mạo Shopee, lấy thông tin thẻ ATM. Domain mới tạo, giao diện y hệt thật.</p>
+                <div class="scam-footer">
+                    <span class="scam-reports">189 báo cáo</span>
+                    <button class="btn-detail">Chi tiết</button>
+                </div>
+            </div>
+            
+            <div class="scam-card warning" data-aos="fade-up" data-aos-delay="200">
+                <div class="scam-header">
+                    <div class="scam-badge warning">
+                        <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"/>
+                        </svg>
+                        Cảnh báo
+                    </div>
+                    <span class="scam-time">1 ngày trước</span>
+                </div>
+                <h3 class="scam-title">0123456789 - VCB</h3>
+                <p class="scam-type">Tài khoản ngân hàng</p>
+                <p class="scam-desc">STK nhận tiền đặt cọc mua hàng online nhưng không giao. Chủ TK tên Nguyễn Văn A.</p>
+                <div class="scam-footer">
+                    <span class="scam-reports">23 báo cáo</span>
+                    <button class="btn-detail">Chi tiết</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Warning Signs -->
+<section class="warning-signs">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Dấu hiệu nhận biết lừa đảo</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+            Cảnh giác với những dấu hiệu sau để tránh bị lừa
+        </p>
+        
+        <div class="signs-grid">
+            <div class="sign-card" data-aos="zoom-in" data-aos-delay="0">
+                <div class="sign-icon">⚡</div>
+                <h3 class="sign-title">Yêu cầu chuyển tiền gấp</h3>
+                <p class="sign-desc">Tạo áp lực thời gian, đòi chuyển tiền ngay lập tức</p>
+            </div>
+            
+            <div class="sign-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="sign-icon">🎁</div>
+                <h3 class="sign-title">Quà tặng quá hấp dẫn</h3>
+                <p class="sign-desc">Hứa hẹn lợi nhuận cao, quà tặng giá trị lớn không rõ nguồn gốc</p>
+            </div>
+            
+            <div class="sign-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="sign-icon">🔐</div>
+                <h3 class="sign-title">Yêu cầu thông tin cá nhân</h3>
+                <p class="sign-desc">Hỏi mật khẩu, mã OTP, số thẻ ATM qua điện thoại</p>
+            </div>
+            
+            <div class="sign-card" data-aos="zoom-in" data-aos-delay="300">
+                <div class="sign-icon">🏢</div>
+                <h3 class="sign-title">Giả mạo cơ quan</h3>
+                <p class="sign-desc">Tự xưng công an, ngân hàng, cơ quan thuế...</p>
+            </div>
+            
+            <div class="sign-card" data-aos="zoom-in" data-aos-delay="400">
+                <div class="sign-icon">💸</div>
+                <h3 class="sign-title">Đòi đặt cọc trước</h3>
+                <p class="sign-desc">Yêu cầu chuyển tiền đặt cọc với mọi lý do</p>
+            </div>
+            
+            <div class="sign-card" data-aos="zoom-in" data-aos-delay="500">
+                <div class="sign-icon">🔗</div>
+                <h3 class="sign-title">Link lạ, tên miền giả</h3>
+                <p class="sign-desc">Website có tên miền khác thường, giao diện sao chép</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Statistics -->
+<section class="statistics">
+    <div class="container">
+        <div class="stats-content">
+            <div class="stats-info" data-aos="fade-right">
+                <h2 class="section-title">Thống kê lừa đảo</h2>
+                <p class="section-subtitle">
+                    Cập nhật liên tục từ cơ sở dữ liệu của chúng tôi
+                </p>
+                
+                <div class="stats-list">
+                    <div class="stat-item-large">
+                        <div class="stat-number-large">89,452</div>
+                        <div class="stat-label-large">Tổng case lừa đảo</div>
+                        <div class="stat-trend up">
+                            <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z"/>
+                            </svg>
+                            +12% so với tháng trước
+                        </div>
+                    </div>
+                    
+                    <div class="stats-breakdown">
+                        <div class="breakdown-item">
+                            <span class="breakdown-label">Số điện thoại</span>
+                            <div class="breakdown-bar">
+                                <div class="breakdown-fill" style="width: 72%"></div>
+                            </div>
+                            <span class="breakdown-percent">72%</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span class="breakdown-label">Website</span>
+                            <div class="breakdown-bar">
+                                <div class="breakdown-fill" style="width: 21%"></div>
+                            </div>
+                            <span class="breakdown-percent">21%</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span class="breakdown-label">Ngân hàng</span>
+                            <div class="breakdown-bar">
+                                <div class="breakdown-fill" style="width: 14%"></div>
+                            </div>
+                            <span class="breakdown-percent">14%</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span class="breakdown-label">Mạng xã hội</span>
+                            <div class="breakdown-bar">
+                                <div class="breakdown-fill" style="width: 11%"></div>
+                            </div>
+                            <span class="breakdown-percent">11%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats-visual" data-aos="fade-left">
+                <div class="chart-container">
+                    <canvas id="scamChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Report -->
+<section class="cta-report">
+    <div class="container">
+        <div class="cta-content" data-aos="zoom-in">
+            <div class="cta-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h2 class="cta-title">Bạn đã bị lừa đảo?</h2>
+            <p class="cta-desc">Báo cáo ngay để cảnh báo cộng đồng và ngăn chặn kẻ xấu</p>
+            <button class="btn-cta" onclick="window.location.href='#report'">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"/>
+                </svg>
+                Báo cáo ngay
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <a href="#" class="footer-logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="18" fill="#DC2626"/>
+                            <path d="M20 8L12 14V20C12 24.42 15.03 28.34 20 29.5C24.97 28.34 28 24.42 28 20V14L20 8Z" fill="white"/>
+                            <path d="M17 20L19 22L23 18" stroke="#DC2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <span class="logo-text">GDVDrXyron</span>
+                </a>
+                <p class="footer-desc">
+                    Bảo vệ cộng đồng khỏi lừa đảo trực tuyến.<br>
+                    Tra cứu miễn phí, nhanh chóng và chính xác.
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4 class="footer-title">Tính năng</h4>
+                <ul class="footer-links">
+                    <li><a href="#check">Kiểm tra số điện thoại</a></li>
+                    <li><a href="#check">Kiểm tra website</a></li>
+                    <li><a href="#check">Kiểm tra ngân hàng</a></li>
+                    <li><a href="#check">Kiểm tra mạng xã hội</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4 class="footer-title">Thông tin</h4>
+                <ul class="footer-links">
+                    <li><a href="#database">Cơ sở dữ liệu</a></li>
+                    <li><a href="#news">Tin tức</a></li>
+                    <li><a href="#about">Về chúng tôi</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4 class="footer-title">Hỗ trợ</h4>
+                <ul class="footer-links">
+                    <li><a href="#report">Báo cáo lừa đảo</a></li>
+                    <li><a href="#faq">Câu hỏi thường gặp</a></li>
+                    <li><a href="#guide">Hướng dẫn sử dụng</a></li>
+                    <li><a href="#privacy">Chính sách bảo mật</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 GDVDrXyron. Bảo vệ cộng đồng khỏi lừa đảo.</p>
+            <div class="footer-links-bottom">
+                <a href="#">Điều khoản</a>
+                <span>•</span>
+                <a href="#">Bảo mật</a>
+                <span>•</span>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Check Result Modal -->
+<div class="modal" id="result-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        
+        <div class="result-container" id="result-container">
+            <!-- Loading State -->
+            <div class="result-loading" id="result-loading">
+                <div class="loading-spinner-large"></div>
+                <p>Đang kiểm tra...</p>
+            </div>
+            
+            <!-- Results will be inserted here -->
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/main.js"></script>
+<script src="js/checker.js"></script>
+```
+
+</body>
+</html>
